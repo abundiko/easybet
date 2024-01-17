@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function SidePanelList() {
   return (
     <div className="rounded-lg bg-primary p-4 text-light flex flex-col gap-2">
-      {links.map(({ title, href }) =>
+      {links.map(({ title, href }) => (
         <Link
           key={title}
           href={href}
@@ -11,7 +11,7 @@ export default function SidePanelList() {
         >
           {title}
         </Link>
-      )}
+      ))}
     </div>
   );
 }
@@ -19,22 +19,22 @@ export default function SidePanelList() {
 const links = [
   {
     title: "All Bets",
-    href: "/"
+    href: "/",
   },
   {
     title: "Pending Bets",
-    href: "/"
+    href: "/",
   },
   {
     title: "Bet History",
-    href: "/"
+    href: "/",
   },
   {
     title: "Transaction History",
-    href: "/"
+    href: "/",
   },
   {
     title: "Log Out",
-    href: "/"
-  }
+    href: "/",
+  },
 ];
