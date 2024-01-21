@@ -1,6 +1,7 @@
 import Active from "./Active";
 import Game from "./Game";
 import Mainbet from "./Mainbet";
+import MatchDetails from "./MatchDetails";
 
 export default function BetPage() {
   return (
@@ -19,6 +20,7 @@ export default function BetPage() {
           />
           <Active />
           <Mainbet />
+          <MatchDetails />
         </div>
       </div>
     </>
