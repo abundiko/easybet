@@ -24,7 +24,7 @@ export default function MatchDetails({ title, number }: MatchDetailsProp) {
 
 function MatchDetailsContent({ title, number }: MatchDetailsProp) {
   return (
-    <div className="flex w-1/2 justify-center items-center gap-9">
+    <div className="flex w-full md:w-10/12  lg:w-8/12 justify-center items-center gap-2 md:gap-9">
       <span className="text-lg font-semibold w-full">{title}</span>
       <div className="h-[3px] rounded w-full bg-secondary"></div>
       <span className="text-sm font-semibold">{number}</span>

@@ -6,7 +6,7 @@ export default function Mainbet() {
       <select
         id="exampleSelect"
         name="exampleSelect"
-        className="py-2 px-64 w-full sm:px-6 lg:px-8 bg-primary  sm:w-64 rounded-md text-secondary text-left mb-4 sm:mb-6 px"
+        className="py-2  w-full md:w-60 px-5 sm:px-6 lg:px-8 bg-primary  rounded-md text-secondary text-left mb-4 sm:mb-6 "
       >
         <option value="">Select prediction</option>
         <option value="option1">Option 1</option>
@@ -22,7 +22,9 @@ export default function Mainbet() {
 
       <div className="flex flex-wrap gap-4 w-full justify-center items-center mt-3">
         {gamep.map((item) => (
-          <button className="btn-primary p-3">{item.title}</button>
+          <button className="btn-primary p-3" key={item.title}>
+            {item.title}
+          </button>
         ))}
       </div>
 
