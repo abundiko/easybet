@@ -3,7 +3,7 @@ export type MatchDetailsProp = {
   number: string;
 };
 
-export default function MatchDetails({ title, number }: MatchDetailsProp) {
+export default function MatchDetails() {
   return (
     <div className="flex flex-col items-center justify-center bg-secondary-light p-6 sm:p-8 md:p-10 lg:p-12">
       <MatchDetailsContent title="Home win" number="10k" />
