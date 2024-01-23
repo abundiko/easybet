@@ -18,7 +18,8 @@ export default function BetPage() {
               img: "/images/clubs/manu.png",
             }}
           />
-          <Active />
+          <div className="py-5"></div>
+          <Active status="Active" ammount="50k" people="50" time="20:15" />
           <Mainbet />
           <MatchDetails />
         </div>
