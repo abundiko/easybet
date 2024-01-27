@@ -2,17 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-  .app-container{
-    @apply px-5 sm:px-7 md:px-10 lg:px-14 xl:px-16
+@layer utilities {
+  .app-container {
+    @apply px-5 sm:px-7 md:px-10 lg:px-14 xl:px-16;
   }
-  .btn-secondary{
-    @apply bg-secondary text-light border border-secondary rounded-lg shadow flex items-center justify-center  hover:scale-90 transition
+  .btn-secondary {
+    @apply bg-secondary text-light border border-secondary rounded-lg shadow flex items-center justify-center  hover:scale-90 transition;
   }
-  .btn-primary-light{
-    @apply bg-primary-light text-light border border-primary-light rounded-lg shadow flex items-center justify-center  hover:scale-90 transition
+  .btn-primary-light {
+    @apply bg-primary-light text-light border border-primary-light rounded-lg shadow flex items-center justify-center  hover:scale-90 transition;
   }
-  .btn-primary{
-    @apply bg-primary text-light border border-primary rounded-lg shadow flex items-center justify-center  hover:scale-90 transition
+  .btn-primary {
+    @apply bg-primary text-light border border-primary rounded-lg shadow flex items-center justify-center  hover:scale-90 transition;
   }
+  .btn-secondary-light {
+    @apply bg-secondary-light text-light border border-secondary-light rounded-lg shadow flex items-center justify-center  hover:scale-90 transition;
+  }
+  .btn-white {
+    @apply bg-transparent border border-transparent rounded-lg shadow flex items-center justify-center  hover:scale-90 transition;
+  }
+  .btn-danger {
+    @apply bg-red-800 text-red-100 border border-red-800 rounded-lg shadow flex items-center justify-center  hover:scale-90 transition;
+  }
+  .input-field {
+    @apply border border-gray-500  rounded-lg p-2;
+  }
+}
+
+.app-table {
+  background: #00000022;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.app-table td {
+  padding: 5px;
+  text-align: center;
+}
+.app-table tr:nth-child(even) {
+  background: #00000022;
 }

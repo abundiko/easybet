@@ -23,21 +23,30 @@ export default function Navbar() {
 
         <div className="flex gap-2 bg-primary-dark rounded-lg p-1">
           <div className="flex max-md:hidden text-light">
-            {
-              defaultNavLinks.map(({ title, href, icon }) => (
-          <Link key={title} href={href} className="hover:scale-110 py-2 px-3">
-        {icon}
-      </Link>
-        ))
-            }
+            {defaultNavLinks.map(({ title, href, icon }) => (
+              <Link
+                key={title}
+                href={href}
+                className="hover:scale-110 py-2 px-3"
+              >
+                {icon}
+              </Link>
+            ))}
           </div>
           <button className="max-md:hidden btn-secondary bg-secondary px-2 lg:px-4 py-1">
-            Log in
+            <Link href="/login">
+              <h1 className="text-lg text-light">Login</h1>
+            </Link>
           </button>
           <button className="max-md:hidden btn-primary-light px-2 lg:px-4 py-1">
-            Sign Up
+            <Link href="/signup">
+              <h1 className="text-lg text-light">Sign up</h1>
+            </Link>
           </button>
-          <button onClick={toggleSidebar} className="p-2 text-lg md:hidden text-light">
+          <button
+            onClick={toggleSidebar}
+            className="p-2 text-lg md:hidden text-light"
+          >
             <FaBars />
           </button>
         </div>
@@ -67,13 +76,11 @@ export default function Navbar() {
 function MobileNavLink() {
   return (
     <nav className="flex justify-between items-center text-light md:hidden">
-      {
-        defaultNavLinks.map(({ title, href, icon }) => (
-          <Link key={title} href={href} className="hover:underline">
-        {title}
-      </Link>
-        ))
-      }
+      {defaultNavLinks.map(({ title, href, icon }) => (
+        <Link key={title} href={href} className="hover:underline">
+          {title}
+        </Link>
+      ))}
     </nav>
   );
 }
@@ -82,16 +89,16 @@ const defaultNavLinks = [
   {
     title: "Home",
     href: "/",
-    icon: <FaHouse />
+    icon: <FaHouse />,
   },
   {
     title: "About Us",
     href: "/about",
-    icon: <FaCircleInfo />
+    icon: <FaCircleInfo />,
   },
   {
     title: "Contact Us",
     href: "/contact",
-    icon: <FaPhone />
+    icon: <FaPhone />,
   },
-]
+];

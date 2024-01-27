@@ -7,10 +7,10 @@ export default function BetsSection() {
         <button className="btn-secondary py-1 px-2 md:px-4 md:w-full text-nowrap">
           Hot Bets
         </button>
-        <button className="btn rounded-md bg-secondary-light py-1 px-2 md:px-4 md:w-full text-nowrap">
+        <button className="btn-secondary-light rounded-md py-1 px-2 md:px-4 md:w-full text-nowrap">
           Open Bets
         </button>
-        <button className="rounded-md bg-secondary-light py-1 px-2 md:px-4 md:w-full text-nowrap">
+        <button className=" btn-secondary-light rounded-md py-1 px-2 md:px-4 md:w-full text-nowrap">
           Game Schedule
         </button>
       </div>
