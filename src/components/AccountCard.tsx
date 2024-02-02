@@ -7,7 +7,7 @@ export default function AccountCard() {
         <Image
           height={50}
           width={50}
-          src="/images/a"
+          src="/images/google.png"
           alt="profile"
           className="overflow-hidden rounded-full h-10 w-10 aspect-square bg-black"
         />

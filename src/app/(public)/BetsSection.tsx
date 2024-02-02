@@ -7,16 +7,18 @@ export default function BetsSection() {
         <button className="btn-secondary py-1 px-2 md:px-4 md:w-full text-nowrap">
           Hot Bets
         </button>
-        <button className="btn-primary py-1 px-2 md:px-4 md:w-full text-nowrap">
+        <button className="btn-secondary-light rounded-md py-1 px-2 md:px-4 md:w-full text-nowrap">
           Open Bets
         </button>
-        <button className="btn-primary py-1 px-2 md:px-4 md:w-full text-nowrap">
+        <button className=" btn-secondary-light rounded-md py-1 px-2 md:px-4 md:w-full text-nowrap">
           Game Schedule
         </button>
       </div>
       <h1 className="font-bold text-lg py-4">Trending Bets</h1>
-      <div className="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 md:gap-2 lg:gap-3">
-        {[1, 2, 3, 4, 5, 6, 7, 8].map(_ => <GameCard key={_} {...dummyGame} />)}
+      <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 md:gap-2 lg:gap-3">
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((_) => (
+          <GameCard key={_} {...dummyGame} />
+        ))}
       </div>
     </section>
   );
@@ -28,10 +30,10 @@ const dummyGame: GameCardProps = {
   bets: "12k",
   club1: {
     name: "manu",
-    img: "/images/clubs/manu.png"
+    img: "/images/clubs/manu.png",
   },
   club2: {
     name: "manu",
-    img: "/images/clubs/manu.png"
-  }
+    img: "/images/clubs/manu.png",
+  },
 };
