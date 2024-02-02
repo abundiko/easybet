@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function SignUpForm() {
   return (
     <form className="flex flex-col gap-3 max-w-[400px]">
@@ -40,17 +42,29 @@ export default function SignUpForm() {
       <button className="btn-primary p-2">Sing in</button>
       <div className="flex gap-3">
         <button className="input-field w-1/2 items-center justify-center flex">
-          <img src="/images/google.png" className="w-3/12" alt="" />
+          <Image
+            height={200}
+            width={200}
+            src="/images/google.png"
+            className="w-3/12"
+            alt=""
+          />
           <p> Google</p>
         </button>
 
         <button className="input-field w-1/2 items-center justify-center flex gap-1">
-          <img src="/images/facebook.png" className="w-3/12" alt="" />
+          <Image
+            height={200}
+            width={200}
+            src="/images/facebook.png"
+            className="w-3/12"
+            alt=""
+          />
           <p> Facebook</p>
         </button>
       </div>
       <p className="text-center">
-        Don't have account?
+        Don&apos;t have account?
         <a href="" className="text-primary">
           Sing up
         </a>
