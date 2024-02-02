@@ -1,6 +1,6 @@
 import Deposit from "./Deposit";
 import DepositCard from "./DepositCard";
-import DepositOption from "./Depositoption";
+import DepositOption from "./DepositOption";
 
 export default function Page() {
   return (

@@ -36,6 +36,8 @@ export default function AllBetTableRow({
             <Image
               src={team1.image}
               alt={team1.name}
+              width={100}
+              height={100}
               className="aspect-square w-6"
             />
           )}
@@ -46,6 +48,8 @@ export default function AllBetTableRow({
             <Image
               src={team2.image}
               alt={team2.name}
+              width={100}
+              height={100}
               className="aspect-square w-6"
             />
           )}
