@@ -1,17 +1,17 @@
-import DepositCard from "./DepositCard";
-import DepositOption from "./DepositOption";
+import WithdrawalCard from "./WIthrawalCard";
+import WithdrawalOption from "./WithdrawaOption";
 
 export default function Page() {
   return (
     <div className=" flex justify-center items-center flex-col py-10">
       <div className="flex flex-col w-full max-w-[500px] items-center">
-        <h1 className="py-3 font-bold text-2xl md:text-3xl">Deposit</h1>
+        <h1 className="py-3 font-bold text-2xl md:text-3xl">Withdrawal</h1>
         <div className="mt-3">
-          <DepositOption />
+          <WithdrawalOption />
         </div>
         <div className="flex justify-center items-center gap-5">
           {cardOptions.map(({ image, title }) => (
-            <DepositCard key={title} title={title} image={image} />
+            <WithdrawalCard key={title} title={title} image={image} />
           ))}
         </div>
       </div>

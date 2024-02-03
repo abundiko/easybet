@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Eazy bet",
   description: "start betting today",
+  icons: ["/images/ufc.png"],
 };
 
 export default function RootLayout({

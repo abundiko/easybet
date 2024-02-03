@@ -1,4 +1,4 @@
-export default function DepositOption() {
+export default function WithdrawalOption() {
   return (
     <div className="flex flex-col gap-1">
       <label htmlFor="exampleSelect" className="text-dark">

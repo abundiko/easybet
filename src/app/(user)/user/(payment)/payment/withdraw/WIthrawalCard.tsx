@@ -5,7 +5,7 @@ export type DepositCardProps = {
   title: string;
 };
 
-export default function DepositCard({ image, title }: DepositCardProps) {
+export default function WithdrawalCard({ image, title }: DepositCardProps) {
   return (
     <div className="bg-primary-dark aspect-square text-light rounded p-3 flex flex-col items-center gap-2">
       <Image
