@@ -1,4 +1,4 @@
-import AllBetTableRow from "../BetTableRow";
+import AllBetTableRow from "./AllBetTableRow";
 
 export default function AllBets() {
   return (

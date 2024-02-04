@@ -1,4 +1,5 @@
 import { FaCircleDot } from "react-icons/fa6";
+import Image from "next/image";
 
 export type TableRowProps = {
   sport: string;
@@ -32,9 +33,11 @@ export default function AllBetTableRow({
       <td>
         <div className="flex justify-center items-center gap-1">
           {team1.image && (
-            <img
+            <Image
               src={team1.image}
               alt={team1.name}
+              height={200}
+              width={200}
               className="aspect-square w-6"
             />
           )}
@@ -42,9 +45,11 @@ export default function AllBetTableRow({
           <FaCircleDot className="scale-50" />
           <span>{team2.name}</span>
           {team2.image && (
-            <img
+            <Image
               src={team2.image}
               alt={team2.name}
+              height={200}
+              width={200}
               className="aspect-square w-6"
             />
           )}
