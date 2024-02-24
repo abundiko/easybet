@@ -46,7 +46,7 @@ export default function SignUpForm() {
             height={200}
             width={200}
             src="/images/google.png"
-            className="w-3/12"
+            className="w-3/12 object-contain"
             alt=""
           />
           <p> Google</p>
@@ -57,7 +57,7 @@ export default function SignUpForm() {
             height={200}
             width={200}
             src="/images/facebook.png"
-            className="w-3/12"
+            className="w-3/12 object-contain"
             alt=""
           />
           <p> Facebook</p>

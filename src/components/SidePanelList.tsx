@@ -19,15 +19,15 @@ export default function SidePanelList() {
 const links = [
   {
     title: "All Bets",
-    href: "/",
+    href: "user/all-bets",
   },
   {
     title: "Pending Bets",
-    href: "/",
+    href: "user/pending-bets",
   },
   {
     title: "Bet History",
-    href: "/",
+    href: "user/bet-history",
   },
   {
     title: "Transaction History",
